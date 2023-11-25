@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,35 @@
     <title>Página de cadastro med +</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
-    <h1>Teste</h1>
+
+    <main>
+        <div>
+            <h2>NOVO COLABORADOR MED+</h2>
+            <form>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="dt-nasc">Data de Nascimento</label>
+                <input type="date" name="dt-nasc" id="dt-nasc">
+                <label for="funcao">Função</label>
+                <input list="funcao">
+                <datalist id="funcao">
+                    <option value="Enfermeiro(a)" />
+                    <option value="Atendente" />
+                </datalist>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha">
+                <div class="bt-cadastro">
+                    <a href="./">VOLTAR</a>
+                    <a href="./" class="btn">CADASTRAR</a>
+                </div>
+            </form>
+        </div>
+        <div><img src="./img/enf.png" alt=""></div>
+    </main>
 </body>
+
 </html>
