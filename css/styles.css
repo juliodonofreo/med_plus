@@ -2,7 +2,11 @@
 
 body {
   margin: 0;
-  background-image: url("../img/bg_hosp.png");
+  background: url("../img/bg_hosp.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   display: grid;
   align-content: center;
   justify-content: center;
