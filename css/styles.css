@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background: url("../img/bg_hosp.png") no-repeat center center fixed; 
+  background: url("../img/bg_hosp.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,11 +57,12 @@ img {
   height: 100%;
 }
 
-.img-enf{
+.img-enf {
   height: 100%;
 }
 
-input, #funcao {
+input,
+#funcao {
   display: block;
   margin-top: 4px;
   border-radius: 4px;
@@ -85,17 +86,26 @@ input, #funcao {
 }
 
 .btn {
+  font-family: "Inter";
   border-radius: 4px;
   padding: 8px 16px;
   text-align: center;
   background-color: #86d4e0;
+  cursor: pointer;
+  border: 3px solid #86d4e0;
 }
 
-.error-text{
+.btn:hover {
+  background: none;
+  border: 3px solid #197887;
+  transition: 0.3s ease-in-out;
+}
+
+.error-text {
   color: red;
   font-size: 0.8em;
 }
 
-#funcao{
+#funcao {
   display: block;
 }
