@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
     <main>
         <div>
             <div class="form">
@@ -24,37 +23,40 @@
 
                     <div>
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" required>
                     </div>
 
                     <div>
                         <label for="dt-nasc">Data de Nascimento</label>
                         <input type="date" name="dt-nasc" id="dt-nasc">
+                        <span class="dt-error error-text"></span>
                     </div>
 
                     <div>
                         <label for="funcao">Função</label>
-                        <input list="funcao">
-                        <datalist id="funcao">
-                            <option value="Enfermeiro(a)" />
-                            <option value="Atendente" />
-                        </datalist>
+                        <select id="funcao">
+                            <option value="Enfermeiro(a)">Enfermeiro(a)</option>
+                            <option value="Atendente">Atendente</option>
+                        </select>
                     </div>
 
                     <div>
                         <label for="senha">Senha</label>
                         <input type="password" name="senha" id="senha">
+                        <span class="password-error error-text"></span>
                     </div>
 
                     <div class="bt-cadastro">
                         <a href="./">VOLTAR</a>
-                        <a href="./" class="btn">CADASTRAR</a>
+                        <input type="submit" value="CADASTRAR" class="btn">
                     </div>
                 </form>
             </div>
         </div>
         <div class="img-enf"><img src="./img/enf.png" alt=""></div>
     </main>
+
+    <script src="js/validation.js"></script>
 </body>
 
 </html>

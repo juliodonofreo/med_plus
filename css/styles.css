@@ -38,7 +38,7 @@ main {
 
 form {
   background: #fff;
-  height: 477.1px;
+  height: 500.1px;
   box-sizing: border-box;
   padding: 40px;
   display: grid;
@@ -54,9 +54,14 @@ form {
 img {
   max-width: 100%;
   display: block;
+  height: 100%;
 }
 
-input {
+.img-enf{
+  height: 100%;
+}
+
+input, #funcao {
   display: block;
   margin-top: 4px;
   border-radius: 4px;
@@ -84,4 +89,13 @@ input {
   padding: 8px 16px;
   text-align: center;
   background-color: #86d4e0;
+}
+
+.error-text{
+  color: red;
+  font-size: 0.8em;
+}
+
+#funcao{
+  display: block;
 }
